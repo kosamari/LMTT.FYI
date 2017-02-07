@@ -68,7 +68,7 @@ footer a {
 /* Content Block*/
 #content {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: flex-end;
   max-width: 1030px;
   min-width: 300px;

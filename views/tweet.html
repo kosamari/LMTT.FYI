@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+  <title>LMTT.FYI</title>
+  <meta name="description" content="A tool to write and share translation of a Tweet.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <meta name="theme-color" content="#32CCB7">
+  <meta name="application-name" content="lmtt.fyi">
+
+  <link href="//cdn.quilljs.com/1.2.0/quill.snow.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <style type="text/css" media="screen">
+    @media screen and (max-width: 900px) {
+      #content {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+      }
+      #desc {
+        padding: 0px;
+        width: 100%;
+        max-width: 500px;
+      }
+      #tweet {
+        padding: 0px;
+      }
+    }
+    @media screen and (max-width: 540px) {
+      #content {
+        align-items: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <div id="header" class="">
+      <div>
+        <h1><a href="/" title="to top page">LMTT.FYI</a></h1>
+        <p>Add translation or commentary to a tweet. <a href="/" title="">What is this ?</a></p>
+      </div>
+
+      <div class="holizontal-items">
+        <img id="userAvatar" class="avatar-icon" src="" alt="user icon">
+        <button id="authBtn" class="ui-btn" type="button"></button>
+      </div>
+    </div>
+
+    <div id="content">
+
+      <div id="desc">
+        <div id="add-btn-container">
+          <button id="addBtn" class="ui-btn btn-border" type="button">Create New Post</button>
+          <button id="saveBtn" class="ui-btn btn-border">Save</button>
+        </div>
+
+        <div id="post">
+          <div class="holizontal-items items-wrap">
+            <img id="authorIcon" alt="author icon" class="avatar-icon" src="">
+            <span id="authorAccount"></span>
+            <button id="editBtn" type="button" class="ui-btn-small">edit</button>
+            <button id="delBtn" type="button" class="ui-btn-small">delete</button>
+            <span id="delModal">
+              <small>Are you sure?</small>
+              <button id="delYesBtn" type="button">yes</button>
+              <button id="delNoBtn" type="button">no</button>
+            </span>
+          </div>
+          <div id="postDate"></div>
+          <div id="postContent"></div>
+        </div>
+
+        <div id="editor"> 
+          <div id="toolbar">
+            <span class="quill-formats">
+              <button class="ql-bold"></button>
+              <button class="ql-italic"></button>
+              <button class="ql-link"></button>
+              <button class="ql-blockquote"></button>
+              <button class="ql-image"></button>
+            </span>
+          </div>
+          <div id="quill"></div>
+        </div>
+      </div>
+
+      <div id="tweet">{{{ embed }}}</div>
+
+    </div>
+    {{> footer}}
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.quilljs.com/1.2.0/quill.js" type="text/javascript" charset="utf-8"></script>
+  <script async src="https://platform.twitter.com/widgets.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/javascript/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

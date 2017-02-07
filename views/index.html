@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+  <title>LMTT.FYI</title>
+  <meta name="description" content="A tool to write and share translation of a Tweet.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <meta name="theme-color" content="#32CCB7">
+  <meta name="application-name" content="lmtt.fyi">
+
+  <link href="/css/style.css" rel="stylesheet">
+  <style type="text/css" media="screen">
+    #post {
+      display: block;
+      max-width: 1030px;
+    }
+    #desc {
+      padding-top: 5px;
+      width: 100%;
+    }
+    code {
+      font-family: monospace;
+      background-color: lightgray;
+      padding:2px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header" class="">
+      <div>
+        <h1>LMTT.FYI</h1>
+        <p>Add translation or commentary to a tweet.</p>
+      </div>
+      <div class="holizontal-items">
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="desc">
+        <div id="post">
+            <h2>Welcome to LMTT.FYI</h2>
+            <p>Hi there, so, I've been seeing a lot of tweets with screen capture of another tweet or news site. While image can fit a lot of information, reading text in picture is hard for me as ESL. In many case, it is not accessible to screen reader either.</p>
+            <br>
+            <p>Twitter offers user to put image description, but I often forget, and I can't add image description after I tweeted.</p>
+            <br>
+            <p>So I had the idea of a mini app to add image description, translation, and commentary to a tweet, without character limit & edit capability.</p>
+            <h2>How to write post</h2>
+            <p><b>Step 1</b><br>Go to individual tweet page, add <code>lmtt.fyi/</code> in front of the url.</p>
+            <br>
+            <img src="/img/step1.gif" alt="" width="300px">
+            <br>
+            <br>
+            <br>
+            <p><b>Step 2</b><br>Click on CREATE NEW POST button, write comments and hit save ! You will need to authenticate with your Twitter account if you are not logged in yet.</p>
+            <br>
+            <img src="/img/step2.gif" alt="" width="300px">
+            <br>
+            <br>
+            <br>
+            <p><b>Step 3</b><br>Tada 🎉, you made a post! Each post gets unique id. Simply share the URL</p>
+            <br>
+            <img src="/img/step3.gif" alt="" width="300px">
+            <h2>Curious how it look like ?</h2>
+            <p>Here are few posts I made with this tool!</p>
+            <ul>
+              <li><a href="http://lmtt.fyi/https://twitter.com/washingtonpost/status/824679341103669251?post=84708421486429381543" title="tweet sample page">A tweet from Washington Post with image</a></li>
+              <li><a href="http://lmtt.fyi/https://twitter.com/kosamari/status/818969996663681026?post=84708421486430023278" title="tweet sample page">A tweet in English with Japanese Translation</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    {{> footer}}
+  </div>
+  <script async src="https://platform.twitter.com/widgets.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

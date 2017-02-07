@@ -1,0 +1,27 @@
+{
+  "name": "lmtt.fyi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosamari/LMTT.FYI.git"
+  },
+  "author": "kosamari <mariko.kosaka@gmail.com> (http://kosamari.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kosamari/LMTT.FYI/issues"
+  },
+  "homepage": "https://github.com/kosamari/LMTT.FYI#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "firebase-admin": "^4.1.0",
+    "hbs": "^4.0.1",
+    "serve-favicon": "^2.3.2",
+    "twit": "^2.2.5"
+  }
+}
